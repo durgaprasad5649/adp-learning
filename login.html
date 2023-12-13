@@ -1,0 +1,125 @@
+<html>
+<head>
+<style>
+
+	#login-box
+	{
+	display:grid;
+    grid-template-columns:50% 50%;
+    width:100%;
+    }
+	#b2
+	{
+	margin-top:40px;
+	}
+	img
+	{
+     width:100%;
+	 margin-top:40px;
+	 
+	}
+	.input
+             {
+                 margin:auto;
+                 height:30px;
+                 border:1px solid #cbdeec;
+                 border-radius:10px;
+                 width:250px;
+                 padding:5px;
+                 font-family:'nunito',sans-serif;
+             }
+			 .btn
+             {
+                 border:2px solid #4974e9;
+                 border-radius:15px;
+                 display:block;
+                 padding:10px;
+                 margin:auto;
+                 margin-top:20px;
+                 width:100px;
+                 background:#4974e9;
+                 color:white;
+                 font-family:'nunito',sans-serif;
+             }
+             .btn:hover
+             {
+                 background:white;
+                 color:#4974e9;
+                 cursor:pointer;
+             }
+			 h3
+            {
+                margin-top:20px;
+                margin-bottom:20px;
+                font-family:'josefin sans',sans-serif;
+                padding:5px;
+                font-size:25px;
+            }
+			.btn1
+			{
+			border:0px;
+			background-color:white;
+			color:blue;
+			}
+			 .btn1:hover
+             {
+                 background:white;
+                 color:#4974e9;
+                 cursor:pointer;
+             }
+	
+body
+	{
+	margin:0px;
+	}
+
+	
+</style>
+</head>
+<body>
+
+
+<div id="login-box">
+	<div id="b1">
+		<img src="login_img.jpg">
+	</div>
+	 
+	<div id="b2">
+	<script type="text/javascript">
+function msg()
+{
+var passkey=document.getElementById("passkey").value;
+let length=passkey.length;
+if(length<8)
+{
+alert("password must contain minimum 8 characters");
+}
+let pattern = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$"); 
+if (pattern.test(passkey)) 
+{
+return true;
+}
+else
+{
+alert("password must contain special characters , numbers,Lower cases and upper cases");
+}
+}
+</script>
+		<h3><center><b> Continue Your Journey </b></center></h3><br><br>
+		
+
+		<center>
+                    <label for="email"><b>Enter your email:</b></label><br><br>
+                    <input type="email" name="email" id="email" class="input"><br><br>
+                    <label for="passkey"><b>Enter your password:</b></label><br><br>
+                    <input id="passkey" type="password" name="passkey" class="input"><br><br>
+                    <input type="submit" value="Login" class="btn" onclick="msg();msga()"><br><br>
+					Don't have an account?
+				<a href="signup.html" class="btn1"  >signup</a>
+		</center>
+              
+	</div>
+</div>
+   
+</body>
+</html>
