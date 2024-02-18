@@ -9,7 +9,7 @@ $ubranch=$_REQUEST['branch'];
 $ucla=$_REQUEST['cla'];
 $con=mysqli_connect('localhost','root','');
 $db=mysqli_select_db($con,'durgaprasad') or die(mysqli_error());
-if($username!=""&& $useremail!="" && $password!="" && $cpassword!="" && $uphone!==""&& $uaddress!="")
+if($username!=""&& $useremail!="" && $password!="" && $cpassword!="" && $uphone!==""&& $uaddress!="" && $ubranch!="" && $ucla!="" && $password==$cpassword)
 {
     $query=mysqli_query($con,"select * from saveuser ");
     $write=mysqli_query($con,"insert into saveuser (name,email,passkey,cpasskey,phone,address,branch,cla) values ('$username' ,'$useremail' ,'$password','$cpassword','$uphone', '$uaddress','$ubranch','$ucla')");
@@ -19,9 +19,8 @@ if($username!=""&& $useremail!="" && $password!="" && $cpassword!="" && $uphone!
 }
 else
 {
-    echo "<script>alert('Fill all the detials');
-     window.location.href='signup.html';</script>";
+    echo  "<script>
+    window.location.href='signup.html';</script>";
     exit();
 }
-
-?> 
+?>
