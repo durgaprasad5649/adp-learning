@@ -34,7 +34,10 @@ Through continuous innovation, collaboration with educational institutions, indu
 
 1. install the gitbash from the web browser
 2.clone the project using below command 
-      git clone 
-
-
+      git clone https://github.com/durgaprasad5649/adp-learning.git
+3.create a folder "styles".Drag all css files into this folder.
+4. create a folder "pic".Drag all the pictures into this folder.
+5.open xampp server control panel ,turn on mysql and apache!
+6.create database using sql commands give in the repository.
+7.open the webbroweser and type : "https://localhost/adp-learning"
 
