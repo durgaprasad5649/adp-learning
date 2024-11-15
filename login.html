@@ -1,0 +1,104 @@
+<<<<<<< HEAD
+<html>
+<head>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+<form action="login.php" method="post">
+
+<div id="login-box">
+	<div id="b1">
+		<img src="pic/login_img.jpg">
+	</div>
+	 
+	<div id="b2">
+	<script type="text/javascript">
+function msg()
+{
+var passkey=document.getElementById("passkey").value;
+let length=passkey.length;
+if(length<8)
+{
+alert("password must contain minimum 8 characters");
+}
+let pattern = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$"); 
+if (pattern.test(passkey)) 
+{
+return true;
+}
+else
+{
+alert("password must contain special characters , numbers,Lower cases and upper cases");
+}
+}
+</script>
+		<h3><center><b> Continue Your Journey </b></center></h3><br><br>
+		
+
+		<center>
+                    <label for="email"><b>Enter your email:</b></label><br><br>
+                    <input type="email" name="email" id="email" class="input"><br><br>
+                    <label for="passkey"><b>Enter your password:</b></label><br><br>
+                    <input id="passkey" type="password" name="passkey" class="input"><br><br>
+                    <input type="submit" value="Login" class="btn" onclick="msg();msga()"><br><br>
+					Don't have an account?
+				<a href="signup.html" class="btn1"  >signup</a>
+		</center>
+              
+	</div>
+</div>
+</form>
+</body>
+=======
+<html>
+<head>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+<form action="login.php" method="post">
+
+<div id="login-box">
+	<div id="b1">
+		<img src="pic/login_img.jpg">
+	</div>
+	 
+	<div id="b2">
+	<script type="text/javascript">
+function msg()
+{
+var passkey=document.getElementById("passkey").value;
+let length=passkey.length;
+if(length<8)
+{
+alert("password must contain minimum 8 characters");
+}
+let pattern = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$"); 
+if (pattern.test(passkey)) 
+{
+return true;
+}
+else
+{
+alert("password must contain special characters , numbers,Lower cases and upper cases");
+}
+}
+</script>
+		<h3><center><b> Continue Your Journey </b></center></h3><br><br>
+		
+
+		<center>
+                    <label for="email"><b>Enter your email:</b></label><br><br>
+                    <input type="email" name="email" id="email" class="input"><br><br>
+                    <label for="passkey"><b>Enter your password:</b></label><br><br>
+                    <input id="passkey" type="password" name="passkey" class="input"><br><br>
+                    <input type="submit" value="Login" class="btn" onclick="msg();msga()"><br><br>
+					Don't have an account?
+				<a href="signup.html" class="btn1"  >signup</a>
+		</center>
+              
+	</div>
+</div>
+</form>
+</body>
+>>>>>>> a36f62a (Added styles folder)
+</html>

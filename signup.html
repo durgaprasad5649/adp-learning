@@ -1,0 +1,280 @@
+<<<<<<< HEAD
+<html>
+<head>
+<link rel="stylesheet" href="styles/style2.css">
+</head>
+<body>
+<br>
+<div class="bdy"><br>
+<center><h1> SIGN UP</h1></center>
+<form name="myform" action="saveuser.php" method="post">
+			<div id="login-box" >
+				<script type="text/javascript">
+					function validate()
+						{
+								if(document.myform.name.value=="")
+								{
+								alert("please enter the name");
+								document.myform.name.focus();
+								return false;
+								}
+								if(document.myform.email.value=="")
+								{
+								alert("please enter the email");
+								document.myform.email.focus();
+								return false;
+								}
+								if(document.myform.passkey.value=="")
+								{
+								alert("please enter the password");
+								document.myform.passkey.focus();
+								return false;
+								}
+								var passkey=document.getElementById("passkey").value;
+								let length=passkey.length;
+								if(length<8)
+								{
+								alert("password must contain minimum 8 characters");
+								}
+								let pattern = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$"); 
+								
+								if (!pattern.test(passkey)) 
+								{
+								
+								alert("password must contain special characters , numbers,Lower cases and upper cases");
+								}		
+						
+								if(document.myform.cpasskey.value=="")
+								{
+								alert("please confirm the password");
+								document.myform.cpasskey.focus();
+								return false;
+								}
+								if(document.getElementById("passkey").value!=document.myform.cpasskey.value)
+								{
+									alert("password not matching");
+								}
+								if(document.myform.phone.value=="")
+								{
+								alert("please enter the phone number");
+								document.myform.phone.focus();
+								return false;
+								}
+
+								if(document.myform.address.value=="")
+								{
+								alert("please enter the Adress");
+								document.myform.address.focus();
+								return false;
+								}
+								
+								if(document.myform.branch.value=="select an option")
+								{
+								alert("please enter the branch");
+								document.myform.branch.focus();
+								return false;
+								}
+								if(document.myform.cla.value=="select an option")
+								{
+								alert("please enter the semester");
+								document.myform.cla.focus();
+								return false;
+								}
+						}
+				</script>
+			
+                <div id="b1">
+                    <label for="name"><b>Enter name :</b></label><br><br>
+                    <input type="text" name="name" class="input"><br><br>
+                    <label for="email"><b>Enter email:</b></label><br><br>
+                    <input type="email" name="email" class="input"><br><br>
+                    <label for="passkey"><b>Enter password :</b></label><br><br>
+                    <input type="password" name="passkey" id="passkey" class="input"><br><br>
+                    <label for="cpasskey"><b>Confirm password :</b></label><br><br>
+                    <input type="password" name="cpasskey" id="cpasskey" class="input"><br><br>
+                </div>
+                <div id="b2" >
+                    <label for="phone"><b>Enter phone :</b></label><br><br>
+                    <input type="text" name="phone" class="input"><br><br>
+                    <label for="address"><b>Enter address :</b></label><br><br>
+                    <input type="text" name="address" class="input"><br><br>
+					
+                    <label for="branch"><b>branch :</b></label><br><br>
+                    <select  name="branch" class="input"><br><br>
+						<option disabled selected >select an option</option>
+						<option value="computer science and engineering">comp science and engineering</option>
+						<option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+						<option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering</option>
+						<option value="Metallurgical Engineering">Metallurgical Engineering</option>
+						<option value="Civil Engineering">Civil Engineering</option>
+						<option value="Informatoinal Technology">Informatoinal Technology</option>
+						<option value="Artificial Intelligence and Machine Learning">Artificial Intelligence and Machine Learning</option>
+						<option value="Mechanical">Mechanical</option>
+						<option value="Mechtronics">Mechtronics</option>
+					</select><br><br>
+                    <label for="cla"><b>Enter semester :</b></label><br><br>
+                    <select  name="cla" class="input"><br><br>
+						<option disabled selected >select an option</option>
+						<option value="sem1">1 sem</option>
+						<option value="sem2">2 sem</option>
+						<option value="sem3">3 sem</option>
+						<option value="sem4">4 sem</option>
+						<option value="sem5">5 sem</option>
+						<option value="sem6">6 sem</option>
+						<option value="sem7">7 sem</option>
+						<option value="sem8">8 sem</option>
+						<option value="passedout">passed out</option>
+						
+					</select><br><br>
+					
+                </div>
+		</div>
+				<br>
+				<center>
+				<input type="submit" class="btn" value="Register" onclick="validate()"/>
+				</center><br><br>
+				<center><b>already have an account ?</b>&nbsp;&nbsp;&nbsp;<a href="login.html">login</a></center><br>
+		</form><br>
+	</div><br>
+</body>
+=======
+<html>
+<head>
+<link rel="stylesheet" href="styles/style2.css">
+</head>
+<body>
+<br>
+<div class="bdy"><br>
+<center><h1> SIGN UP</h1></center>
+<form name="myform" action="saveuser.php" method="post">
+			<div id="login-box" >
+				<script type="text/javascript">
+					function validate()
+						{
+								if(document.myform.name.value=="")
+								{
+								alert("please enter the name");
+								document.myform.name.focus();
+								return false;
+								}
+								if(document.myform.email.value=="")
+								{
+								alert("please enter the email");
+								document.myform.email.focus();
+								return false;
+								}
+								if(document.myform.passkey.value=="")
+								{
+								alert("please enter the password");
+								document.myform.passkey.focus();
+								return false;
+								}
+								var passkey=document.getElementById("passkey").value;
+								let length=passkey.length;
+								if(length<8)
+								{
+								alert("password must contain minimum 8 characters");
+								}
+								let pattern = new RegExp( "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$"); 
+								
+								if (!pattern.test(passkey)) 
+								{
+								
+								alert("password must contain special characters , numbers,Lower cases and upper cases");
+								}		
+						
+								if(document.myform.cpasskey.value=="")
+								{
+								alert("please confirm the password");
+								document.myform.cpasskey.focus();
+								return false;
+								}
+								if(document.getElementById("passkey").value!=document.myform.cpasskey.value)
+								{
+									alert("password not matching");
+								}
+								if(document.myform.phone.value=="")
+								{
+								alert("please enter the phone number");
+								document.myform.phone.focus();
+								return false;
+								}
+
+								if(document.myform.address.value=="")
+								{
+								alert("please enter the Adress");
+								document.myform.address.focus();
+								return false;
+								}
+								
+								if(document.myform.branch.value=="select an option")
+								{
+								alert("please enter the branch");
+								document.myform.branch.focus();
+								return false;
+								}
+								if(document.myform.cla.value=="select an option")
+								{
+								alert("please enter the semester");
+								document.myform.cla.focus();
+								return false;
+								}
+						}
+				</script>
+			
+                <div id="b1">
+                    <label for="name"><b>Enter name :</b></label><br><br>
+                    <input type="text" name="name" class="input"><br><br>
+                    <label for="email"><b>Enter email:</b></label><br><br>
+                    <input type="email" name="email" class="input"><br><br>
+                    <label for="passkey"><b>Enter password :</b></label><br><br>
+                    <input type="password" name="passkey" id="passkey" class="input"><br><br>
+                    <label for="cpasskey"><b>Confirm password :</b></label><br><br>
+                    <input type="password" name="cpasskey" id="cpasskey" class="input"><br><br>
+                </div>
+                <div id="b2" >
+                    <label for="phone"><b>Enter phone :</b></label><br><br>
+                    <input type="text" name="phone" class="input"><br><br>
+                    <label for="address"><b>Enter address :</b></label><br><br>
+                    <input type="text" name="address" class="input"><br><br>
+					
+                    <label for="branch"><b>branch :</b></label><br><br>
+                    <select  name="branch" class="input"><br><br>
+						<option disabled selected >select an option</option>
+						<option value="computer science and engineering">comp science and engineering</option>
+						<option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+						<option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering</option>
+						<option value="Metallurgical Engineering">Metallurgical Engineering</option>
+						<option value="Civil Engineering">Civil Engineering</option>
+						<option value="Informatoinal Technology">Informatoinal Technology</option>
+						<option value="Artificial Intelligence and Machine Learning">Artificial Intelligence and Machine Learning</option>
+						<option value="Mechanical">Mechanical</option>
+						<option value="Mechtronics">Mechtronics</option>
+					</select><br><br>
+                    <label for="cla"><b>Enter semester :</b></label><br><br>
+                    <select  name="cla" class="input"><br><br>
+						<option disabled selected >select an option</option>
+						<option value="sem1">1 sem</option>
+						<option value="sem2">2 sem</option>
+						<option value="sem3">3 sem</option>
+						<option value="sem4">4 sem</option>
+						<option value="sem5">5 sem</option>
+						<option value="sem6">6 sem</option>
+						<option value="sem7">7 sem</option>
+						<option value="sem8">8 sem</option>
+						<option value="passedout">passed out</option>
+						
+					</select><br><br>
+					
+                </div>
+		</div>
+				<br>
+				<center>
+				<input type="submit" class="btn" value="Register" onclick="validate()"/>
+				</center><br><br>
+				<center><b>already have an account ?</b>&nbsp;&nbsp;&nbsp;<a href="login.html">login</a></center><br>
+		</form><br>
+	</div><br>
+</body>
+>>>>>>> a36f62a (Added styles folder)
+<html>
